@@ -2,7 +2,7 @@
 Starter code for Assignment 3 - Grid Maker.
 
 As a user, I can: <br><br>
-[] select an action from a menu <br>
+- [x] select an action from a menu <br>
 [] add rows to the grid <br>
 [] add columns to the grid <br>
 [] remove rows from the grid <br>
