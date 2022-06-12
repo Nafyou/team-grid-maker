@@ -1,6 +1,6 @@
 // Declare global variables
-let numRows = 2;
-let numCols = 3;
+let numRows = 0;
+let numCols = 0;
 let colorSelected; 
 
 // Add a row
@@ -22,8 +22,22 @@ function addR(tableID) {
 }
 
 // Add a column
-function addC() {
-    alert("Clicked Add Col"); // Replace this line with your code.
+function addC(tableID) {
+    //If there is no rows that exist, we will create one.
+    if(numRows == 0){
+        addR(tableID);
+    }
+
+    //Acessing all rows via a nodelist
+    const rows = document.querySelectorAll("tr");
+    console.log(rows);
+    rows.forEach(
+        function(node){
+            node.insertCell(-1);
+        }
+    );
+
+    numCols += 1;
 }
 
 // Remove a row
