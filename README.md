@@ -3,8 +3,8 @@ Starter code for Assignment 3 - Grid Maker.
 
 As a user, I can: <br><br>
 - [x] select an action from a menu <br>
-[] add rows to the grid <br>
-[] add columns to the grid <br>
+- [x] add rows to the grid <br>
+- [x] add columns to the grid <br>
 [] remove rows from the grid <br>
 [] remove columns from the grid <br>
 [] select a color from a dropdown menu of colors <br>
