@@ -8,12 +8,14 @@ function addR(tableID) {
     let table = document.getElementById(tableID);
 
     //If we have 0 rows, we need to add 1 column (cell) after inserting our first row.
-    if(numRows == 0){
+    if(numRows == 0 && numCols == 0){
         numRows+=1;
         numCols+=1;
 
         let newRow = table.insertRow(-1);
-        newRow.insertCell(0);
+        for(let i = 0; i < numCols; i++){
+            newRow.insertCell(i);
+        }
 
         //We stop the function here to prevent adding another row
         return;
@@ -54,8 +56,17 @@ function addC(tableID) {
 }
 
 // Remove a row
-function removeR() {
-    alert("Clicked Remove Row"); // Replace this line with your code.
+function removeR(tableID) {
+    // BONUS TODO: Give user option to remember number of columns when deleting 1st row
+
+    if(numRows == 0){
+        alert("Can't delete a row that doesn't exist!");
+        return
+    }
+
+    document.getElementById(tableID).deleteRow(0);
+    numRows -= 1;
+
     
 }
 
