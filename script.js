@@ -1,11 +1,24 @@
 // Declare global variables
-let numRows = 0;
-let numCols = 0;
+let numRows = 2;
+let numCols = 3;
 let colorSelected; 
 
 // Add a row
-function addR() {
-    alert("Clicked Add Row"); // Replace this line with your code.
+function addR(tableID) {
+    let table = document.getElementById(tableID);
+
+
+    //Add a row to the end of the table
+    let newRow = table.insertRow(-1);
+    
+    //Add a new cell for every column in the new row
+    for(let col=0; col < numCols;col++){
+        console.log(col);
+        newRow.insertCell(col);
+    }
+
+    //Increment numRows since we just created a new one
+    numRows += 1;
 }
 
 // Add a column
@@ -16,6 +29,7 @@ function addC() {
 // Remove a row
 function removeR() {
     alert("Clicked Remove Row"); // Replace this line with your code.
+    
 }
 
 // Remove a column
