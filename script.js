@@ -7,9 +7,19 @@ let colorSelected;
 function addR(tableID) {
     let table = document.getElementById(tableID);
 
+    //If we have 0 rows, we need to add 1 column (cell) after inserting our first row.
+    if(numRows == 0){
+        numRows+=1;
+        numCols+=1;
 
-    //Add a row to the end of the table
+        let newRow = table.insertRow(-1);
+        newRow.insertCell(0);
+
+        //We stop the function here to prevent adding another row
+        return;
+    }
     let newRow = table.insertRow(-1);
+    //Add a row to the end of the table
     
     //Add a new cell for every column in the new row
     for(let col=0; col < numCols;col++){
@@ -26,6 +36,9 @@ function addC(tableID) {
     //If there is no rows that exist, we will create one.
     if(numRows == 0){
         addR(tableID);
+
+        //We stop the function here to prevent adding another column
+        return;
     }
 
     //Acessing all rows via a nodelist
