@@ -107,7 +107,7 @@ function removeC(tableID) {
 
 // Set global variable for selected color
 function selectColor(){
-    // This is the variable of the color that the user selects
+    // This is the variable of the color that the user selects using a dropdown menu
     colorSelected = document.getElementById("selectedColorId").value;
     console.log(colorSelected);
 }
