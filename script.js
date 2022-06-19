@@ -143,5 +143,8 @@ function fillAll(){
 
 // Clear all cells
 function clearAll(){
-    alert("Clicked Clear All"); // Replace this line with your code.
+    let cells = document.querySelectorAll("td");
+    
+    //Setting the background color of every node (cell) to blank, which is white.
+    cells.forEach((node) => node.style.backgroundColor = "");
 }
