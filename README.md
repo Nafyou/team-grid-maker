@@ -1,8 +1,10 @@
 Team Grid-Maker 
 Developed using vanilla javascript to obtain a better understanding of DOM manipulation.
 
-github: http://nafew.me/team-grid-maker/
-Contributors/Group Members: Nafew Mustafa(@Nafyou) Mohammad (@Alap Amin)
+github: http://nafew.me/team-grid-maker/ <br>
+Contributors/Group Members: <br>
+Nafew Mustafa(@Nafyou) <br>
+Mohammad (@alapamin) <br>
 
 As a user, I can: <br><br>
 - [x] select an action from a menu <br>
