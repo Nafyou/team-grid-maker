@@ -129,7 +129,16 @@ function fillU(){
 
 // Fill all cells
 function fillAll(){
-    alert("Clicked Fill All"); // Replace this line with your code.
+    let cells = document.querySelectorAll("td");
+
+    //No need for condition, because we are filling ALL cells.
+
+    //This accesses every individual cell
+    cells.forEach(
+        function(node){
+            node.style.backgroundColor = colorSelected;
+        }
+    )
 }
 
 // Clear all cells
