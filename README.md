@@ -1,7 +1,7 @@
 <h1>
 Team Grid-Maker 
 Developed using vanilla javascript to obtain a better understanding of DOM manipulation.
-<h1>
+</h1>
 
 GitHub Pages Link: http://nafew.me/team-grid-maker/ <br>
 Contributors/Group Members: <br>
