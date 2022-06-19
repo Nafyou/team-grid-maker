@@ -114,7 +114,17 @@ function selectColor(){
 
 // Fill all uncolored cells
 function fillU(){
-    alert("Clicked Fill All Uncolored"); // Replace this line with your code.
+    //We want to access every cell
+    let cells = document.querySelectorAll("td");
+        //We want to access every uncolored cell
+        // console.log("cells:",cells);
+        cells.forEach(
+            function(node){
+                if (node.style.backgroundColor == ""){
+                    node.style.backgroundColor = colorSelected;
+                }
+            }
+        )
 }
 
 // Fill all cells
